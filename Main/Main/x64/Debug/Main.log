@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\xxx\Desktop\СП Лаб-5\Main\Main\main.cpp(58,15): warning C4244: return: преобразование "WPARAM" в "int", возможна потеря данных
+C:\Users\xxx\Desktop\СП Лаб-5\Main\Main\main.cpp(133,40): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\xxx\Desktop\СП Лаб-5\Main\Main\main.cpp(169,45): warning C4244: =: преобразование "double" в "LONGLONG", возможна потеря данных
+  Main.vcxproj -> C:\Users\xxx\Desktop\СП Лаб-5\Main\x64\Debug\Main.exe
