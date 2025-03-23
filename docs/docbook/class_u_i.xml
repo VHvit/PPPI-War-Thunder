@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_u_i" xml:lang="ru">
+<title>UI</title>
+<indexterm><primary>UI</primary></indexterm>
+<para>
+
+<para>Модуль пользовательского интерфейса. </para>
+ 
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_u_i_1a787622703117a2060d2161db1ec751e2"/><emphasis role="strong">UI</emphasis> ()</para>
+
+<para>Конструктор класса <link linkend="_class_u_i">UI</link>. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_u_i_1ad1eef1d68ac9cdee5d0b21a68ce2bbc2">addHudElement</link> (const std::string &amp;element)</para>
+
+<para>Добавляет новый элемент в HUD. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_u_i_1a15b682ae64e75755b405814809cfaf52">enableChat</link> (bool voice=false)</para>
+
+<para>Включает встроенный чат и голосовую связь. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_u_i_1af16e12619eb738829798c4afdbd827e8">enableMultiMonitor</link> (bool enabled)</para>
+
+<para>Включает или отключает поддержку многомониторных конфигураций. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_u_i_1ac5a0a3345007ba640489e0c0fbc7de5b"/>void <emphasis role="strong">integrateSteamOverlay</emphasis> ()</para>
+
+<para>Интеграция пользовательского интерфейса со Steam Overlay. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_u_i_1aca3f8a9d69358e42529cc12057809264">setResolution</link> (int width, int height)</para>
+
+<para>Устанавливает разрешение экрана. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_u_i_1afc351e24f50d10cf44b33b7c68d7d2ff">showTooltip</link> (const std::string &amp;message)</para>
+
+<para>Отображает обучающую подсказку. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_u_i_1afc0e5b7c1ca738712539babe18c52766"/>bool <emphasis role="strong">chatEnabled</emphasis></para>
+
+<para>Флаг включенного чата </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_u_i_1a77ea31d4024e89478432963f4b4ca295"/>std::vector&lt; std::string &gt; <emphasis role="strong">hudElements</emphasis></para>
+
+<para>Список элементов HUD. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Модуль пользовательского интерфейса. </para>
+
+
+
+<para>Этот модуль предоставляет адаптивный интерфейс для различных разрешений экрана, поддержку многомониторных конфигураций, настраиваемые элементы HUD, интерактивные обучающие подсказки, встроенный чат и голосовую связь, а также интеграцию со Steam Overlay. </para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_u_i_1ad1eef1d68ac9cdee5d0b21a68ce2bbc2"/><section>
+    <title>addHudElement()</title>
+<indexterm><primary>addHudElement</primary><secondary>UI</secondary></indexterm>
+<indexterm><primary>UI</primary><secondary>addHudElement</secondary></indexterm>
+<para><computeroutput>void addHudElement (const std::string &amp; element)</computeroutput></para><para>
+
+<para>Добавляет новый элемент в HUD. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>element</entry><entry>
+<para>Название элемента HUD. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_u_i_1a15b682ae64e75755b405814809cfaf52"/><section>
+    <title>enableChat()</title>
+<indexterm><primary>enableChat</primary><secondary>UI</secondary></indexterm>
+<indexterm><primary>UI</primary><secondary>enableChat</secondary></indexterm>
+<para><computeroutput>void enableChat (bool voice = <computeroutput>false</computeroutput>
+)</computeroutput></para><para>
+
+<para>Включает встроенный чат и голосовую связь. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>voice</entry><entry>
+<para>true для включения голосовой связи, false для текстового чата. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_u_i_1af16e12619eb738829798c4afdbd827e8"/><section>
+    <title>enableMultiMonitor()</title>
+<indexterm><primary>enableMultiMonitor</primary><secondary>UI</secondary></indexterm>
+<indexterm><primary>UI</primary><secondary>enableMultiMonitor</secondary></indexterm>
+<para><computeroutput>void enableMultiMonitor (bool enabled)</computeroutput></para><para>
+
+<para>Включает или отключает поддержку многомониторных конфигураций. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>enabled</entry><entry>
+<para>true для включения, false для отключения. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_u_i_1aca3f8a9d69358e42529cc12057809264"/><section>
+    <title>setResolution()</title>
+<indexterm><primary>setResolution</primary><secondary>UI</secondary></indexterm>
+<indexterm><primary>UI</primary><secondary>setResolution</secondary></indexterm>
+<para><computeroutput>void setResolution (int width, int height)</computeroutput></para><para>
+
+<para>Устанавливает разрешение экрана. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>width</entry><entry>
+<para>Ширина экрана в пикселях. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>height</entry><entry>
+<para>Высота экрана в пикселях. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_u_i_1afc351e24f50d10cf44b33b7c68d7d2ff"/><section>
+    <title>showTooltip()</title>
+<indexterm><primary>showTooltip</primary><secondary>UI</secondary></indexterm>
+<indexterm><primary>UI</primary><secondary>showTooltip</secondary></indexterm>
+<para><computeroutput>void showTooltip (const std::string &amp; message)</computeroutput></para><para>
+
+<para>Отображает обучающую подсказку. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>message</entry><entry>
+<para>Текст подсказки. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+C:/Users/xxx/source/repos/pppi4/pppi4/pppi4.cpp</section>
+</section>
